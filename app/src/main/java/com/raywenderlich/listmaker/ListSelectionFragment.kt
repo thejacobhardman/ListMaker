@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class ListSelectionFragment : Fragment(), ListSelectionRecyclerViewAdapter.ListSelectionRecyclerViewClickListener {
+    
     lateinit var listDataManager: ListDataManager
     lateinit var listsRecyclerView: RecyclerView
     private var listener: ListSelectionFragment.OnListItemFragmentInteractionListener? = null

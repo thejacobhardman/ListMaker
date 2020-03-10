@@ -16,9 +16,7 @@ class TaskList(val name: String, val tasks: ArrayList<String> = ArrayList()) : P
     }
 
     companion object CREATOR: Parcelable.Creator<TaskList> {
-        override fun createFromParcel(source: Parcel): TaskList =
-            TaskList(source)
-        override fun newArray(size: Int): Array<TaskList?> =
-            arrayOfNulls(size)
+        override fun createFromParcel(source: Parcel): TaskList = TaskList(source)
+        override fun newArray(size: Int): Array<TaskList?> = arrayOfNulls(size)
     }
 }

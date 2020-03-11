@@ -19,5 +19,6 @@ class ListDataManager(private val context: Context) {
             val list = TaskList(taskList.key, itemsHashSet)
             taskLists.add(list)
         }
-        return taskLists }
+        return taskLists
+    }
 }
